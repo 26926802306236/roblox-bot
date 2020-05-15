@@ -22,7 +22,8 @@ bot.on("message", async message => {
 });
 
 bot.on("ready", function() {
-  
+  bot.user.setGame(``);
+  console.log(`${bot.user.username} is Ready!`);
 });
 
 async function accept() {
